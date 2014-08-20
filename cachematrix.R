@@ -1,7 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Create a inversable matrix
+## Creates a special "vector", which is really a list containing a function to
+## 1. set the value of the vector
+## 2. get the value of the vector
+## 3. set the value of the mean
+## 4. get the value of the mean
 
 makeCacheMatrix <- function(x = matrix()) {
         value <- NULL
@@ -18,8 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-##Inverse a matrix, if the matrix is inversed already, return the cached-inversed one, 
-## otherwise, inverse it and save the inversed matrix in cache and return it
+##The following function calculates the mean of the special "vector" created with the above function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
